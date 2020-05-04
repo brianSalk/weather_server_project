@@ -6,7 +6,7 @@ const get_coordinates = require('./utils/get_coordinates')
 
 // call express function to create new express application
 const app = express()
-
+const port = process.env.PORT || 3000
 // query strings
 const mapboxUrl = 'https://api.mapbox.com/geocoding/v5/mapbox.places/chicago.json?access_token=pk.eyJ1IjoiYnJpZ3V5c2tpaGkiLCJhIjoiY2s5ZDl4aGxpMDFraTNsczZ4YzQ5eG8zdiJ9.45h4xTmJ0SX-ehqiMZjD2g'
 
@@ -114,6 +114,6 @@ app.use(express.static(path.join(publicDirPath, '/weather.json')))
 
 // second arg is optional, it is executed when you enter the 
 // server at the given port.
-app.listen(3000, () => {
-    console.log('server is working')
+app.listen(port, () => {
+    console.log('server is running at port ' + port)
 })
