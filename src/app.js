@@ -54,7 +54,7 @@ app.get('/weather', (req, res) => {
     get_coordinates(req.query.location, (error, data) => {
         if (error) {
             return res.send({
-                error
+                error: error
             })
         }
         get_weather(data.latitude, data.longitude, (error2, data2) => {
@@ -66,7 +66,8 @@ app.get('/weather', (req, res) => {
             res.send({
                 location: data.location,
                 description: data2.description,
-                temperature: data2.temperature
+                temperature: data2.temperature,
+                observation_time: data2.observation_time
             })
         })
     })

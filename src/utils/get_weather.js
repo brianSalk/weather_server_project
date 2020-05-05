@@ -10,7 +10,8 @@ const get = (lat, lon, callback) => {
         } else {
             callback(undefined, {
                 temperature: response.body.current.temperature,
-                description: response.body.current.weather_descriptions[0]
+                description: response.body.current.weather_descriptions[0],
+                observation_time: response.body.current.observation_time
 
             })
         }
