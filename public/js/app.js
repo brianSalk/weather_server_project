@@ -24,10 +24,10 @@ weatherForm.addEventListener('submit', e => {
     fetch(`/weather?location=${location}`).then(response => {
     response.json().then(data => {
         if (data.error) {
-            console.log(error)
             messageTwo.textContent = data.error
         } else {
-        messageTwo.textContent = `It is ${data.temperature} degrees in ${data.location}!\nInfo last updated: ${data.observation_time}`
+        messageTwo.textContent = `It is ${data.temperature} degrees in ${data.location}`
+        messageOne.textContent = `Info last updated: ${data.observation_time}`
         console.log(data.location, data.temperature)
         }
     })
