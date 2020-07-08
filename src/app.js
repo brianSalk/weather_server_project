@@ -32,7 +32,6 @@ app.get('', (req, res) => {
 
 app.get('/about', (req, res) => {
     res.render('about', {
-        his_name: 'Adem friedland',
         title: 'About',
         name: "Brian Salkas"
     })

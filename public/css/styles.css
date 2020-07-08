@@ -1,5 +1,5 @@
 body {
-    color: #333333;
+    background-image: linear-gradient(to left, rgba(10, 12, 141, 0.39), rgba(140, 139, 230, 0.39));
     font-family: arial;
     max-width: 650px;
     margin: 0 auto;
@@ -19,6 +19,8 @@ footer {
     border-top: 1px solid #eeeeee;
     margin-top: 16px;
     padding: 16px 0px;
+    bottom: 5%;
+    position: absolute;
 
 }
 
