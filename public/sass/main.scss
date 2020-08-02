@@ -1,0 +1,129 @@
+@import "utils/vars.scss";
+@import "utils/mixins";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: linear-gradient(to right, $color-background-left, $color-background-right) ,url("/pics/cloudy-sky.webp");
+    //background-color: red;
+}
+header {
+    background-color: rgb(245, 245, 245);
+    
+    display: block;
+    text-align: center;
+    padding-bottom: 1rem;
+    img {
+        position: absolute;
+        left: 4rem;
+    }
+    h1 {
+        font-size: 5rem;
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        color: $color-theme;
+    }
+    div {
+        display: block;
+        left: 30%;
+        width: 30%;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 2rem;
+        a {
+            position: relative;
+            padding: 4rem;
+            text-decoration: none;
+            border: none;
+            //background-color: $color-theme;
+            //border-radius: 4rem;
+            padding: .5rem 1rem .5rem 1rem;
+            color: black;
+            font-family: consolas;
+            transition: background-color .4s;
+            &:hover {
+                transition: background-color .1s;
+                background-color: $color-theme;
+            }
+        }
+    }
+}
+.main-content {
+    display: block;
+    position: relative;
+    text-align: center;
+        p1 {
+            display: block;
+            margin: 7rem;
+            font-size: 3rem;
+        }
+        form {
+            margin: 10rem;
+    }
+    #random-btn {
+        border: none;
+        background-color: white;
+        border-radius: 10rem;
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        position: relative;
+        font-family: arial;
+        font-size: 1.5rem;
+        //left: 45%;
+        box-shadow: 0rem 0rem 0rem black;
+        transform: translateY(-3rem);
+        transition: all .3s;
+        &:hover {
+            transition: all .3s;
+            box-shadow: -.7rem .7rem 1rem rgba(0, 0, 0, 0.561);
+            transform: translateY(-3.4rem);
+        }
+        &:active {
+            background-color: darken(white, 5%);
+            transition: all .3s;
+            box-shadow: -.4rem .4rem .7rem rgba(0, 0, 0, 0.800);
+            transform: translateY(-3.1rem);
+        }
+    }
+    p2 {
+        @include normalFont();
+    }
+    p3 {
+        font-size: 2rem;
+        color: #333333;  
+    }
+}
+
+.portrait {
+    background-color: red;
+    display: inline-block;
+    max-width: 10%;
+    height: auto;
+}
+p {
+        @include normalFont();
+        text-align: center;
+}
+   
+.about-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+        @include normalFont();
+        text-align: center;
+    }
+    img {
+        align-self: center;
+        margin: 5rem;
+    }
+}
+footer {
+    font-size: 1.5rem;
+    position: absolute;
+    display: inline;
+    bottom: 4%;
+    left: 45%;
+    padding: 3rem;
+    border-top: .1rem solid #3333339b;
+}

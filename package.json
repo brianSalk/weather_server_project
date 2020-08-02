@@ -1,0 +1,23 @@
+{
+  "name": "web_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "supervisor -e js,hbs,css -n success src/app.js",
+    "sass": "node-sass --watch public/sass/main.scss -o public/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "supervisor": "^0.12.0"
+  }
+}

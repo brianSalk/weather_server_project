@@ -1,0 +1,112 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  background-image: linear-gradient(to right, rgba(0, 195, 255, 0.404), rgba(0, 26, 255, 0.876)), url("/pics/cloudy-sky.webp"); }
+
+header {
+  background-color: whitesmoke;
+  display: block;
+  text-align: center;
+  padding-bottom: 1rem; }
+  header img {
+    position: absolute;
+    left: 4rem; }
+  header h1 {
+    font-size: 5rem;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    color: #87b6eb; }
+  header div {
+    display: block;
+    left: 30%;
+    width: 30%;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2rem; }
+    header div a {
+      position: relative;
+      padding: 4rem;
+      text-decoration: none;
+      border: none;
+      padding: .5rem 1rem .5rem 1rem;
+      color: black;
+      font-family: consolas;
+      transition: background-color .4s; }
+      header div a:hover {
+        transition: background-color .1s;
+        background-color: #87b6eb; }
+
+.main-content {
+  display: block;
+  position: relative;
+  text-align: center; }
+  .main-content p1 {
+    display: block;
+    margin: 7rem;
+    font-size: 3rem; }
+  .main-content form {
+    margin: 10rem; }
+  .main-content #random-btn {
+    border: none;
+    background-color: white;
+    border-radius: 10rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    position: relative;
+    font-family: arial;
+    font-size: 1.5rem;
+    box-shadow: 0rem 0rem 0rem black;
+    transform: translateY(-3rem);
+    transition: all .3s; }
+    .main-content #random-btn:hover {
+      transition: all .3s;
+      box-shadow: -0.7rem 0.7rem 1rem rgba(0, 0, 0, 0.561);
+      transform: translateY(-3.4rem); }
+    .main-content #random-btn:active {
+      background-color: #f2f2f2;
+      transition: all .3s;
+      box-shadow: -0.4rem 0.4rem 0.7rem rgba(0, 0, 0, 0.8);
+      transform: translateY(-3.1rem); }
+  .main-content p2 {
+    position: relative;
+    font-size: 2.5rem;
+    display: block;
+    margin: 7rem; }
+  .main-content p3 {
+    font-size: 2rem;
+    color: #333333; }
+
+.portrait {
+  background-color: red;
+  display: inline-block;
+  max-width: 10%;
+  height: auto; }
+
+p {
+  position: relative;
+  font-size: 2.5rem;
+  display: block;
+  margin: 7rem;
+  text-align: center; }
+
+.about-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .about-div p {
+    position: relative;
+    font-size: 2.5rem;
+    display: block;
+    margin: 7rem;
+    text-align: center; }
+  .about-div img {
+    align-self: center;
+    margin: 5rem; }
+
+footer {
+  font-size: 1.5rem;
+  position: absolute;
+  display: inline;
+  bottom: 4%;
+  left: 45%;
+  padding: 3rem;
+  border-top: .1rem solid #3333339b; }

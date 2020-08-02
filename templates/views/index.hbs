@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        {{>links}}
+        <link rel="icon" href="/pics/cloud.png">
+    </head>
+
+    <body>
+        <div class= "main-content">
+            {{>header}}
+            <p1>Enter a location below to obtain current weather, or try our new random feature</p1>
+            <form>
+                <input>
+                <button>Search</button>
+            </form>
+            <button id="random-btn">Random Major City</button>
+            <p2 id="message-2"></p2>
+            <p3 id="message-1"></p3>
+        </div>
+        
+        
+        {{>footer}}
+
+    <!-- this is after all the other stuff to keep up from getting error -->
+    <script src="/js/app.js"></script>
+    </body>
+
+    
+
+</html>
