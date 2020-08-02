@@ -5,8 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/app.js",
+<<<<<<< HEAD
     "dev": "supervisor -e js,hbs,css -n success src/app.js",
     "sass": "node-sass --watch public/sass/main.scss -o public/css"
+=======
+    "dev": "nodemon src/app.js -e js, hbs"
+>>>>>>> 9a964441d061ad3b6adce14693e7c67593c4121c
   },
   "keywords": [],
   "author": "",
@@ -17,7 +21,11 @@
     "request": "^2.88.2"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "node-sass": "^4.14.1",
     "supervisor": "^0.12.0"
+=======
+    "nodemon": "^2.0.3"
+>>>>>>> 9a964441d061ad3b6adce14693e7c67593c4121c
   }
 }

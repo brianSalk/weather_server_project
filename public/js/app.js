@@ -1,9 +1,23 @@
+<<<<<<< HEAD
+=======
+console.log('this will be logged when someone visits the homepage')
+
+// fetch('http://puzzle.mead.io/puzzle').then((response) => {
+//     response.json().then(data => {
+//         console.log(data)
+//     })
+// })
+
+
+
+>>>>>>> 9a964441d061ad3b6adce14693e7c67593c4121c
 // convert things marked in our html as 'form' to javascript so we can
 // attach logic to them
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
 const messageOne = document.querySelector('#message-1')
 const messageTwo = document.querySelector('#message-2')
+<<<<<<< HEAD
 const $random_btn = document.getElementById('random-btn')
 
 const getRandomPlace = () => {
@@ -11,6 +25,10 @@ const getRandomPlace = () => {
 'frankfort', 'keyoto', 'mumbai', 'copenhagen', 'santiago de cuba', 'kinshasa', 'duesseldorf', 'st petersburg', 'busan', 'detroit', 'niamey', 'monico', 'joliet il']
     return places[Math.floor(Math.random() * places.length)]
 }
+=======
+
+
+>>>>>>> 9a964441d061ad3b6adce14693e7c67593c4121c
 
 weatherForm.addEventListener('submit', e => {
     e.preventDefault()
@@ -27,6 +45,7 @@ weatherForm.addEventListener('submit', e => {
         }
     })
 })
+<<<<<<< HEAD
 })
 
 $random_btn.addEventListener('click', e => {
@@ -44,4 +63,6 @@ $random_btn.addEventListener('click', e => {
             }
         })
     })
+=======
+>>>>>>> 9a964441d061ad3b6adce14693e7c67593c4121c
 })
